@@ -1,0 +1,390 @@
+*{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+box-sizing: border-box;
+}
+a{
+text-decoration: none;
+color: inherit;
+}
+body{
+    margin: 0;
+    color: rgb(230, 226, 226);
+    background-color: #231f20;
+}
+.wall{
+width: 100%;
+height: 100vh;
+display: flex;
+flex-wrap: wrap;
+}
+@media (max-width:800px){
+    .wall-photo{
+        min-width: 100%;
+    }
+    .wall-text{
+        min-width: 100%;
+    }
+}
+.wall-photo{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('../img/wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#catalog{
+    background-image: url('../img/catalog.jpg');
+}
+.wall2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wall2-text h1{
+text-align: left;
+color: white;
+font-size: 1.4em;
+}
+.wall2-text{
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    padding: 50px 30px;
+    width: 30%;
+}
+.wall-photo>h1{
+position: absolute;
+width: 100%;
+padding: 10px;
+text-align: center;
+top: 40%;
+font-size: 10vmin;
+}
+/*.wall-photo img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}*/
+section{
+padding: 20px;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.btn-catalog-menu button{
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #231f20;
+    padding: 10px;
+    font-size: 1.4em;
+    transition: 0.5s;
+    color: white;
+}
+.btn-catalog-menu button:hover{
+    transform: translateY(-5px);
+    background-color:#15151f;
+}
+.content{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+width: 70%;
+padding: 10px;
+border-radius: 15px;
+background-color: #2a2627;
+}
+.content-btn{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 70%;
+padding: 10px;
+border-radius: 15px;
+background-color: #2a2627;
+}
+.content>h1{
+text-align: center;
+}
+.review{
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #2a2627;
+    border-radius: 15px;
+}
+.reviews{
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    min-width: 300px;
+    width: 300px;
+    background-color: #231f20;
+}
+.reviews p{
+    padding: 0 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.reviews h1{
+margin: 10px;
+}
+img.reviewimg{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    position: relative;
+    bottom: 30px;
+    margin: 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+img.reviewstar{
+    padding: 5px 0;
+    width: 150px;
+    object-fit: contain;
+}
+.map iframe{
+    width: 100%;
+    height: 50vh;
+}
+.map{
+    border-radius: 15px;
+overflow: hidden;
+width: 70%;
+height: max-content;
+}
+.contact{
+border-radius: 15px;
+overflow: hidden;
+width: 70%;
+height: max-content;
+background:url('../img/contact.jpg') no-repeat;
+background-size: cover;
+}
+.contact-text{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.contact-text h2{
+    color: #d90429;
+    text-align: right;
+    font-weight: bolder;
+}
+.contact-text h1{
+    font-size: 8vmin;
+    text-align: right;
+    margin: 0;
+}
+.contact-text .menu a{
+    padding: 15px;
+    font-size: 1.5em;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: white;
+    color: #d90429;
+    width: max-content;
+    transition: all 0.5s;
+}
+.contact-text .menu a:hover{
+    background-color: #d90429;
+    color: white;
+}
+.contact-text .menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+/*Товар - item*/
+.map2 iframe{
+    width: 100%;
+    height: 50vh;
+}
+.map2{
+    border-radius: 15px;
+overflow: hidden;
+width: 85%;
+height: max-content;
+}
+.contact2{
+border-radius: 15px;
+overflow: hidden;
+width: 85%;
+height: max-content;
+background:url('../img/contact.jpg') no-repeat;
+background-size: cover;}
+
+@media (max-width: 1000px){
+    section{
+        min-width: 100%;
+    }
+    .content-item{
+    min-width: 100%;
+    }
+    .item-photo{
+        min-width: 100%;
+    }
+}
+
+.content-item{
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #2a2627;
+    }
+.item-photo{
+    overflow: hidden;
+    width: 40%;
+    background-color: #2a2627;
+    scroll-snap-type: x mandatory;
+}
+.item-photos{
+    overflow-x: scroll;
+    display: flex;
+    height: fit-content;
+    background-color: #2a2627;
+}
+.item-photos img{
+    scroll-snap-align: start;
+    margin: 15px;
+    border-radius: 15px;
+    height: 300px;
+    flex: 1;
+}
+.item-photo img{
+    width: 100%;
+    object-fit: cover;
+}
+.item-text p {
+    text-align: justify;
+}
+.item-text{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    padding: 10px 20px;
+}
+.item-text ul {
+    display: inline;
+}
+.item-text ul li{ 
+    list-style-type: disc;
+}
+.btn-menu{
+    display: flex;
+}
+/*uiverse*/
+.btn {
+    margin: 0 5px;
+    width: 240px;
+    height: 50px;
+    background: linear-gradient(to top, #231f20, #2e292a, #231f20);
+    color: #fff;
+    border-radius: 0.4em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+  
+  .button {
+    margin: 0 5px;
+    background-color: #231f20;
+    border: 1px solid #25D366;
+    padding: 5px;
+    position: relative;
+    width: 9.4em;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+  }
+  
+  .button p {
+    position: absolute;
+    left: 1.15em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #25D366;
+  }
+  
+  .button svg {
+    position: absolute;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+  }
+  
+  .button:hover p {
+    left: 0.5em;
+    color: #fff
+  }
+  
+  .button:hover svg {
+    opacity: 1;
+  }
+  
+  .button:hover {
+    background-color: #25D366;
+  }
+  
