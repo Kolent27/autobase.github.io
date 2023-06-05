@@ -234,6 +234,21 @@ background-size: cover;}
     section{
         min-width: 100%;
     }
+    .review{
+        min-width: 90%;
+    }
+    .content-btn{
+        min-width: 90%;
+    }
+    .contact{
+        min-width: 90%;
+    }
+    .map{
+        min-width: 90%;
+    }
+    .content{
+        min-width: 90%;
+    }
     .content-item{
     min-width: 100%;
     }
